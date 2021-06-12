@@ -9,7 +9,7 @@ float LinearizeDepth(float depth)  {
 
     // The following formula undoes what the projection matrix does, giving us a value
     // from [near, far], where near and far are the values of the near and far plane distances
-    // in the perspective view
+    // in the perspective view; it then normalizes them to be in range [0,1]
     return (2.0 * near * far) / (far + near - z * (far - near));	
 }
 
