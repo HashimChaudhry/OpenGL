@@ -89,7 +89,7 @@ int main() {
     shader.use();
     shader.setInt("diffuseMap", 0);
     shader.setInt("normalMap", 1);
-    shader.setInt("heightMap", 2);
+    shader.setInt("depthMap", 2);
 
     // Lighting info
     vec3 lightPos(0.5f, 1.0f, 0.3f);
